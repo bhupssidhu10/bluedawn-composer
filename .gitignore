@@ -1,1 +1,5 @@
-vendor
+wp-config.php
+wordpress/
+wp-content/plugins
+vendor/
+.env
