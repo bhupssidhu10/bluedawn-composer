@@ -1,0 +1,72 @@
+/*
+CONTACT
+*/
+
+#contact{
+
+    .first, .second, .third{
+      width:29%;
+      display:inline-block;
+      vertical-align: top;
+      @media only screen and (max-width:700px){
+        width:100% !important;
+        display:block !important;
+        margin-top:30px;
+  
+    }
+  }
+      .first, .second{
+        @media only screen and (max-width:1200px){
+          width:45%;
+          text-align: center !important;
+        }
+      }
+    .third{
+      width:40%;
+      @media only screen and (max-width:1200px){
+        width:100%;
+        display:block;
+        text-align: center;
+      }
+    }
+  
+  
+    .second{
+      display:none;
+      .person{
+        .person_image, .person_details{
+          display:inline-block;
+          vertical-align: middle;
+        }
+  
+        .person_image{
+          width:60px;
+          padding-right:15px;
+                }
+  
+        .person_details{
+            .bold{
+              padding:0;
+              margin:0;
+            }
+            a{
+              text-decoration: underline;
+              margin:0;
+              padding:0;
+            }
+        }
+  
+        img{
+        width:60px;
+        height:60px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+    }
+  }
+  
+  }
+  
+  .wpforms-field-medium {
+      max-width:100% !important;
+  }

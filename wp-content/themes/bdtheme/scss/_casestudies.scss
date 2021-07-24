@@ -1,0 +1,130 @@
+/**
+Case studies page
+  **/
+
+  #casestudy-header{
+    height:100vh;
+    background:red;
+    padding:0;
+    background-position: center;
+    background-size: cover;
+  
+  @media only screen and (max-width:1200px){
+    height:80vh;
+  }
+  
+    .cs-wrapper{
+      background:$dark-blue;
+      background:rgba($dark-blue,0.8);
+      height:100%;
+      width:100%;
+      box-sizing: border-box;
+      padding:0 10%;
+      margin:0;
+  }
+    .h1-wrapper{
+  
+      height:100px;
+      margin:auto;
+      padding-top:45vh;
+      @media only screen and (max-width:1200px){
+      padding-top:30vh;
+      }
+      h1{
+        text-align: center;;
+        color:$light-white;
+        font-family: $font-serif;
+        font-size:3em;
+        line-height:1.5em;
+        transition-duration: .5s;
+        &:hover{
+          font-size:3.5em;
+        }
+      }
+  }
+  }
+  
+  #casestudy-feature{
+  
+  
+    .feature-logo{
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:20px;
+    @media only screen and (max-width:700px){
+  
+      width:100%;
+    }
+    img{
+      width:200px;
+      margin:auto;
+      display:block;
+    }
+    }
+  
+  
+    .feature-text{
+      display:inline-block;
+      vertical-align: middle;
+      width:70%;
+      border-left:1px solid $light-cream;
+      padding-left:40px;
+        @media only screen and (max-width:1000px){
+          width:60%;
+        }
+        @media only screen and (max-width:700px){
+          width:100%;
+          border:none;
+          padding:0;
+        }
+    }
+  }
+  
+  .cs-images{
+    padding-top:0;
+    padding-bottom:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+    .cs-img{
+      height:60vh;
+  
+      &:first-of-type{
+        height:80vh;
+        grid-column: span 2;
+      }
+  
+      @media only screen and (max-width:1200px){
+        grid-column: span 2;
+        height:auto !important;
+        width:100%;
+      }
+      img{
+        width:100%;
+        height:100%;
+        display:block;
+        object-fit:cover;
+  
+        &:hover{
+          opacity:0.8;
+        }
+    }
+  
+    }
+  }
+  
+  .cs-content .grid50{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  
+    p{
+      padding-right:60px;
+    }
+  
+    img{
+      width:100%;
+      height:400px;
+      object-fit: cover;
+    }
+  }
+  

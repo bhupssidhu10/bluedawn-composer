@@ -1,0 +1,72 @@
+/**
+  Services page
+  **/
+
+  #services-header{
+    height:300px;
+    padding-bottom:0;
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+    padding:0;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+
+
+
+    .services-title{
+      height:300px;
+
+      h1{
+        padding-top:263px;
+        color:$light-white;
+        font-size:4em;
+      }
+    }
+    .services-breadcrumbs{
+      height:300px;
+
+      .wrapper{
+        margin-top:260px;
+        font-size:0.7em;
+        p{float:right;
+          a{
+            color:$light-white;
+
+            &:hover{
+              color:$gold;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+#services-subhead{
+
+  padding-top:30px;
+
+  h2{font-family:$font-sans-serif;
+    color:$dark-red;
+    font-weight:600;
+    line-height:40px;
+  }
+
+  .feature-img{
+    margin:auto;
+    margin-top:60px;
+    margin-bottom:60px;
+    display:block;
+    object-fit: cover;
+    width:1200px;
+    height:500px;
+    @media only screen and (max-width:1200px){
+      height:auto;
+      width:100%;
+    }
+
+  }
+
+
+}

@@ -38,7 +38,7 @@
 <meta name="google-site-verification" content="KaZYWGuuqqUjZBJ_lmUf6_OKo0dMmbkAoUCURD0EL5s" />
 
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/normalize.css">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
+<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/bdanim.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<?php wp_head();?>

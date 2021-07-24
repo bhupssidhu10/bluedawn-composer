@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+	/* Clear body */
+
+	section#home-header{
+		height:100vh;
+		position: relative;
+		background:#ccc;
+		padding:0;
+		}
+	.col-1{
+		width:100%
+		}
+
+	/* set top and bottom section backgrounds */
+	#home-header .sky{
+		top: 1px;
+		position:relative;
+		background: #DCD5CA;
+		height:50%;
+		}
+	#home-header .sea{
+		background: #FAFAF9;
+		height:50%;
+		}
+	/* Set animation containers */
+	.upperanimwrap,
+	.loweranimwrap{
+		width:70%;
+		max-width:450px;
+		min-width:160px;
+		height: 100%;
+		margin:auto;
+		overflow:hidden;
+		position:relative;
+		}
+		@media only screen and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
+			.upperanimwrap{width:60vh;}
+			.loweranimwrap{
+				width:60vh;
+				height:20vh !important;
+			}
+			#header-tagline{
+				position:relative;
+				top:-60px;
+			}
+
+		}
+	.loweranimwrap{
+		height:170px;
+	}
+	/*@media only screen and (max-width:1500px){
+		.upperanimwrap,
+		.loweranimwrap{
+			width:30%;
+		}
+	}
+
+	@media only screen and (max-width:767px){
+		.upperanimwrap,
+		.loweranimwrap{
+			width:60%;
+		}
+	}
+*/
+	.logosun{
+		z-index:40;
+		position:absolute;
+		bottom:-8px;
+		-webkit-animation-name: movetopicon; /* Safari 4.0 - 8.0 */
+		animation-name: movetopicon;
+		}
+
+	.logosun img{
+		margin-left:2%
+		}
+
+	.logoreflect{
+		z-index:40;
+		position:relative;
+		top:0px;
+		-webkit-animation-name: movebottomicon; /* Safari 4.0 - 8.0 */
+		animation-name: movebottomicon;
+		}
+
+	.logotext{
+		z-index:45;
+		width:85%;
+		margin-left:7.5%;
+		position:absolute;
+		bottom:-3px;
+		opacity:1;
+		-webkit-animation-name: movetext; /* Safari 4.0 - 8.0 */
+		animation-name: movetext;
+		}
+
+
+
+	/* set global animation rules */
+	.animation {
+		-webkit-animation-duration:1s; /* Safari 4.0 - 8.0 */
+		-webkit-animation-iteration-count:initial; /* Safari 4.0 - 8.0 */
+		animation-duration:1s;
+		animation-iteration-count:initial;
+		}
+
+	/* animate logo icon */
+/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes movetopicon{
+		0% {bottom:-500px}
+		20% {bottom:-500px}
+		80%{bottom:-8px;}
+		100%{bottom:-8px;}
+		}
+	@-webkit-keyframes movebottomicon{
+		0% {top:-500px;}
+		80%{top:0px;}
+		100%{top:0px;}
+		}
+
+
+
+
+	@keyframes movetopicon{
+		0% {bottom:-300px}
+		20% {bottom:-300px}
+		100%{bottom:-8px;}
+	}
+	@keyframes movebottomicon{
+		0% {top:-300px;}
+		100%{top:0px;}
+		}
+	@keyframes movetext{
+		0% {bottom:-300px;}
+		60% {bottom:-100px}
+		100%{bottom:-3px;}
+		}

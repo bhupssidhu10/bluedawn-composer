@@ -17,10 +17,7 @@
   .boxcount5{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
-  @media only screen and (max-width:1200px){
-
-    grid-template-columns:1fr;
-  }
+  
   #services-container{
     width:95%;
     margin:auto;

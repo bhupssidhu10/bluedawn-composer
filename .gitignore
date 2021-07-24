@@ -1,5 +1,7 @@
 wp-config.php
 wordpress/
 wp-content/plugins
+wp-content/uploads
 vendor/
 .env
+node_modules/
