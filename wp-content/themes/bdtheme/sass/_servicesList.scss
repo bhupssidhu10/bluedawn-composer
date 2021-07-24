@@ -1,0 +1,244 @@
+
+/*
+* Services Section
+*/
+
+.boxcount2{
+  grid-template-columns: 1fr 1fr;
+}
+
+.boxcount3{
+  grid-template-columns: 1fr 1fr 1fr;}
+
+  .boxcount4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .boxcount5{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  @media only screen and (max-width:1200px){
+
+    grid-template-columns:1fr;
+  }
+  #services-container{
+    width:95%;
+    margin:auto;
+    margin-top:30px;
+    padding:0;
+    display:grid;
+
+    @media only screen and (max-width:1000px){
+      grid-template-columns:1fr;
+    }
+
+    h3, p{
+      border:none;
+      width:100%;
+      color:$light-white;
+
+    }
+
+    article{
+      padding:20px 30px 60px;
+      transition-duration:0.3s;
+
+      &:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+          @media only screen and (max-width:1100px){
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+      }
+    }
+      &:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        @media only screen and (max-width:1100px){
+          -ms-grid-row: 2;
+          -ms-grid-column: 1;
+    }
+      }
+      &:nth-child(3){
+        -ms-grid-row: 1;
+        -ms-grid-column:3;
+        @media only screen and (max-width:1100px){
+          -ms-grid-row: 3;
+          -ms-grid-column: 1;
+      }
+      }
+      &:nth-child(4){
+        -ms-grid-row: 1;
+        -ms-grid-column:4;
+        @media only screen and (max-width:1100px){
+          -ms-grid-row: 4;
+          -ms-grid-column: 1;
+    }
+      }
+
+    }
+
+
+    button{
+      border:1px solid;
+      margin-top:10px;
+      border-radius:20px;
+      padding:5px 15px;
+      cursor:pointer;
+      transition-duration:0.3s;
+    }
+
+    article:hover{
+      transform: translate(0px, -10px);
+      background:$light-white;
+    }
+
+
+    .visual-identity, .visual-identity button{
+      background:$dark-green;
+    }
+
+    .visual-identity:hover p, .visual-identity:hover h3{
+      color:$dark-green;
+    }
+
+    .visual-identity button:hover{
+      background:$light-white;
+      color:$dark-green
+    }
+
+    .digital-marketing, .digital-marketing button{
+      background:$dark-red;
+    }
+
+    .digital-marketing:hover p, .digital-marketing:hover h3{
+      color:$dark-red;
+    }
+    .digital-marketing button:hover{
+      background:$light-white;
+      color:$dark-red;
+    }
+
+    .print-design, .print-design button{
+      background:$dark-brown;
+    }
+
+    .print-design:hover p, .print-design:hover h3{
+      color:$dark-brown;
+    }
+    .print-design button:hover{
+      background:$light-white;
+      color:$dark-red;
+    }
+
+
+    .web-design, .web-design button{
+      background:$gold;
+    }
+
+    .web-design:hover p, .web-design:hover h3{
+      color:$gold;
+    }
+    .web-design button:hover{
+      background:$light-white;
+      color:$gold;
+    }
+
+    article p, article button{
+      color:$light-white;
+    }
+}
+
+#service-group{
+    color: $light-white;
+    padding: 80px 60px;
+    box-sizing: border-box;
+
+    button{
+      border:1px solid;
+      margin-top:10px;
+      display:block;
+      margin:auto;
+      border-radius:20px;
+      padding:5px 15px;
+      cursor:pointer;
+      transition-duration:0.3s;
+      color: $light-white;
+      border-color: $light-white;
+    }
+    .content {
+      width:30%;
+      padding:0 5%;
+      display:inline-block;
+      vertical-align: middle;
+      text-align: center;
+      @media only screen and (max-width:900px)
+      {
+        width:100%;
+        padding:0;
+      }
+
+      h2{
+        margin-bottom:40px;
+        line-height:30px;
+      }
+      a{
+        margin-top:0px;
+      }
+    }
+
+    .image{
+      width:55%;
+      display:inline-block;
+      vertical-align: middle;
+      @media only screen and (max-width:900px)
+      {display:none;}
+      a{
+        width:100%;
+      }
+      img{
+        width:100%;
+        object-fit: cover;
+        max-height:400px;
+      }
+    }
+    }
+
+  .visual-identity, .visual-identity button{
+    background:$dark-green;
+  }
+
+
+  .visual-identity button:hover{
+    background:$light-white;
+    color:$dark-green !important;
+  }
+
+  .digital-marketing, .digital-marketing button{
+    background:$dark-red;
+  }
+
+  .digital-marketing button:hover{
+    background:$light-white;
+    color:$dark-red !important;;
+  }
+
+  .print-design, .print-design button{
+    background:$dark-brown;
+  }
+
+  .print-design button:hover{
+    background:$light-white;
+    color:$dark-red !important;
+  }
+
+
+  .web-design, .web-design button{
+    background:$gold;
+  }
+
+
+  .web-design button:hover{
+    background:$light-white;
+    color:$gold !important;;
+  }

@@ -1,0 +1,70 @@
+
+
+#service-points{
+  padding:0;
+
+  nav{
+    width:100%;
+    background: $dark-red;
+    padding:0px;
+    height:60px;
+    font-size:0.9em;
+
+    @media only screen and (max-width:1200px){
+      height:fit-content;
+    }
+
+    ul {
+      width:fit-content;
+      margin:auto;
+      padding:20px 0;
+      list-style: none;
+
+      li {
+        width:197px;
+        text-align: center;
+        display: inline-block;
+        margin:0;
+        padding:0;
+        transition-duration:0.3s;
+        @media only screen and (max-width:1200px){
+          display:block;
+          margin:20px auto;
+
+        }
+      &:hover{
+        transform: translateY(-5px);
+      }
+      a{
+        padding: 10px 15px;
+        color:#DCD5C9;
+        transition:color 0.2s linear, background 0.2s linear;
+      &:hover{
+        color:#BC8B3C;
+      }
+    }
+  }
+}
+}
+
+.feature-img{
+  margin:auto;
+  margin-top:60px;
+  margin-bottom:60px;
+  display:block;
+  object-fit: cover;
+  width:100%;
+  max-width:800px;
+  max-height:400px;
+
+
+}
+
+.service-point-containter{
+  padding:80px 20px;
+  margin-bottom:0;
+  margin-top:0;
+}
+
+
+}
