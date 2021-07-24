@@ -9,7 +9,7 @@
 <section id="services-subhead" class="light ">
   <div class="full-width-wrapper">
     <?php $title3 = get_field('subtitle'); ?>
-    <h2 class="left"><?php echo $title3; ?></h3>
+    <h2 class="left"><?php echo $title3; ?></h2>
 
       <?php $main_feature_img = get_field('feature_image');
             $url = $main_feature_img['url'];
