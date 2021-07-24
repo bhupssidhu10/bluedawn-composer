@@ -1,7 +1,7 @@
 
 {
 	"require": {
-	        "johnpbloch/wordpress": "5.6",
+	        "johnpbloch/wordpress": "5.*",
             "wpackagist-plugin/wordpress-seo":"16.6.*",
             "wpackagist-plugin/really-simple-ssl":"5.0.*",
             "wpackagist-plugin/easy-fancybox":"1.8.*",
